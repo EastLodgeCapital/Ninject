@@ -6,7 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-### Changed
+### Changed - Forked
+ - Updated target frameworks to minimum of netstandard2.0, netcoreapp3.1 or net472
+ - Included changes from lord-executor:fixing-iserviceprovider to fix issues with IServiceProvider compatiblity (fixes https://github.com/ninject/Ninject/issues/376)
+ - Version bumped to 3.5 for internal version management
+ - Dependancies updated BenchmarkDotNet -> 0.13, Moq -> 4.16
+
+### Changed - Prefork
 - Dropped support for .NET Framework 4.5. We now only provide support for the .NET Framework 4.6 and .NET Standard 2.0 target frameworks.
 - Changed return value of IBindingResolver (and implementing classes) from `IEnumerable<IBinding>` to `ICollection<IBinding>`.
 - Changed return value of `ISelector.SelectConstructorsForInjection(Type type)` (and implementing classes) from `IEnumerable<ConstructorInfo>` to `ConstructorInfo[]`.
