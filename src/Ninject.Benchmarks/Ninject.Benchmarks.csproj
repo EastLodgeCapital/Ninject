@@ -6,6 +6,7 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\Ninject.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
+	<DefineConstants>NO_REMOTING</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
