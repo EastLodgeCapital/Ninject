@@ -31,6 +31,7 @@ public class WarriorModule : NinjectModule
 }
 ```
 
+
 ## Features:
 
 1. **Focused.** Too many existing dependency injection projects sacrifice usability for features that aren't often necessary.
